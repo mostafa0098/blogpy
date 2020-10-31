@@ -1,3 +1,9 @@
 .vscode
 venv/
 __pycache__/
+
+#database
+db.sqlite3
+
+#migrations
+blog/migrations/
