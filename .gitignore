@@ -7,3 +7,7 @@ db.sqlite3
 
 #migrations
 blog/migrations/
+
+#static files
+blog/files
+blogpy/static/
