@@ -29,14 +29,8 @@ class Article(models.Model):
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
     author = models.OneToOneField(UserProfile, on_delete=models.CASCADE)
 
-    def __str__(self):
-        return self.title
-
 
 class Category(models.Model):
     title = models.CharField(max_length=128, null=False, blank=False)
     cover = models.FileField(
         upload_to='files/category_cover/', null=False, blank=False, validators=[validate_file_extention])
-
-    def __str__(self):
-        return self.title
