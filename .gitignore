@@ -11,3 +11,4 @@ blog/migrations/
 #static files
 blog/files
 blogpy/static/
+/files
